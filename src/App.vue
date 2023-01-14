@@ -18,7 +18,6 @@
       <div class="location-box">
         <div class="location">{{ weather.name }}, {{ weather.sys.country }}</div>
         <div class="date">{{dateBuilder()}}</div>
-        <div class="time">{{timeBuilder ()}}</div>
       </div>
       <div class="weather-box">
         <div class="temp">{{Math.round(weather.main.temp)}} °C</div>
@@ -64,13 +63,6 @@ export default {
       let year = d.getFullYear();
    
       return `${day} ${date} ${month} ${year}`;
-    },
-    timeBuilder () {
-      let d = new Date();
-      let hours = d.getHours();
-      let minutes = d.getMinutes();
-      let seconds = d.getSeconds();   
-      return  `Time: ${hours} ${minutes} ${seconds}`;
     }
   }
 }
