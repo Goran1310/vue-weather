@@ -14,9 +14,10 @@
         />
         
     </div>
-    Current weather data.
+    <div class="wrap">Current weather data.
     Access current weather data for any location on Earth including over 200,000 cities.
     Weather data from different sources such as global and local weather models, satellites, radars and a vast network of weather stations. Data is available with API call in JSON
+    </div>
     <div class="weather-wrap" v-if="typeof weather.main != 'undefined'">
       <div class="location-box">
         <div class="location">{{ weather.name }}, {{ weather.sys.country }}</div>
@@ -159,7 +160,7 @@ main {
   margin: 30px 0px;
   box-shadow: 3px 6px rgba(0,0,0,0.3);;
 }
-.weather-box .weather {
+.weather-box .weather .wrap{
   color: #FFFF;
   font-size: 41px;
   font-weight: bold;
